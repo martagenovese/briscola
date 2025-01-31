@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briscola Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title-container">
+        <h1 id="game-title">Briscola</h1>
+        <button id="rules-btn">Rules</button>
+    </div>
+
+    <div id="rules-popup" class="rules-popup">
+        <div class="rules-content">
+            <span class="close-btn">&times;</span>
+            <h2>Rules of Briscola</h2>
+            <div class="rules-text">
+                <h3>Game Overview</h3>
+                <p>Briscola is a trick-taking card game played with a 40-card Italian deck.</p>
+                
+                <h3>Card Values</h3>
+                <ul>
+                    <li>Ace (Asso): 11 points</li>
+                    <li>Three (Tre): 10 points</li>
+                    <li>King (Re): 4 points</li>
+                    <li>Horse (Cavallo): 3 points</li>
+                    <li>Jack (Fante): 2 points</li>
+                    <li>All other cards: 0 points</li>
+                </ul>
+
+                <h3>How to Play</h3>
+                <ul>
+                    <li>Each player receives 3 cards</li>
+                    <li>One card is turned face up to determine the trump suit (Briscola)</li>
+                    <li>Players take turns playing one card each</li>
+                    <li>The player who plays the highest card of the led suit wins the trick</li>
+                    <li>Trump suit (Briscola) beats any card of other suits</li>
+                    <li>Winner of each trick leads the next one</li>
+                </ul>
+
+                <h3>Winning</h3>
+                <p>The game ends when all cards are played. The player with the most points wins.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="scoreboard">
+            <p id="opponent-score">Opponent Score: 0</p>
+            <p id="player-score">Player Score: 0</p>
+        </div>
+        <div id="game">
+            <div id="opponent-hand" class="hand">
+                <h2>Opponent's Hand</h2>
+            </div>
+            <div id="played-cards">
+                <h2>Played Cards</h2>
+                <div id="player-played" class="card-slot"></div>
+                <div id="opponent-played" class="card-slot"></div>
+            </div>
+            <div id="briscola-card">
+                <h2>Briscola</h2>
+            </div>
+            <div id="player-hand" class="hand">
+                <h2>Your Hand</h2>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
